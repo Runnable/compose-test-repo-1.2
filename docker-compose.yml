@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: './src/'
+    command: [node, index.js]
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=development
+      - SHOW=true
+      - HELLO=678
